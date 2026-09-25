@@ -1,0 +1,5 @@
+//operators
+let x = 10;
+let y = 5;
+// = equal operator(loose equal operator)
+// == equal operator(strict equal operator)

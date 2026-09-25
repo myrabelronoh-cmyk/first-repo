@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventures in Fire Island</title>
+  <link rel="stylesheet" href="stlye.css" />
+</head>
+<body>
+  <header>
+    <nav class="top-nav">
+      <a href="#about" class="active">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>Adventures in Fire Island</h1>
+  </header>
+
+  <main class="container">
+    <section id="about" class="about">
+      <h2>About Fire Island</h2>
+      <p>Fire Island is a beautiful barrier island off the southern coast of Long Island, New York. It is known for its pristine beaches, charming communities, and vibrant nightlife.</p>
+      <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Beautiful scenery" width="600" height="400" />
+    </section>
+
+    <section id="blog" class="about">
+      <h2>Blog Updates</h2>
+      <article>
+        <h3>Exploring the Beaches</h3>
+        <p>Discover the best beaches on Fire Island, from the lively Ocean Beach to the serene Cherry Grove.</p>
+      </article>
+      <article>
+        <h3>Nightlife and Entertainment</h3>
+        <p>Experience the vibrant nightlife of Fire Island with its bars, clubs, and live music venues.</p>
+      </article>
+      <article>
+        <h3>Outdoor Activities</h3>
+        <p>Enjoy a variety of outdoor activities such as hiking, biking, and bird watching in the natural beauty of Fire Island.</p>
+      </article>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2>Image Gallery</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Beach Sunset" />
+          <figcaption>Beach Sunset</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Boardwalk" />
+          <figcaption>Boardwalk</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Lighthouse" />
+          <figcaption>Lighthouse</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="about">
+      <h2>Contact Us</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+</body>
+</html>
