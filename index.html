@@ -1,78 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adventures in Fire Island</title>
-  <link rel="stylesheet" href="stlye.css" />
-</head>
-<body>
-  <header>
-    <nav class="top-nav">
-      <a href="#about" class="active">About</a>
-      <a href="#blog">Blog</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <h1>Adventures in Fire Island</h1>
-  </header>
-
-  <main class="container">
-    <section id="about" class="about">
-      <h2>About Fire Island</h2>
-      <p>Fire Island is a beautiful barrier island off the southern coast of Long Island, New York. It is known for its pristine beaches, charming communities, and vibrant nightlife.</p>
-      <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Beautiful scenery" width="600" height="400" />
-    </section>
-
-    <section id="blog" class="about">
-      <h2>Blog Updates</h2>
-      <article>
-        <h3>Exploring the Beaches</h3>
-        <p>Discover the best beaches on Fire Island, from the lively Ocean Beach to the serene Cherry Grove.</p>
-      </article>
-      <article>
-        <h3>Nightlife and Entertainment</h3>
-        <p>Experience the vibrant nightlife of Fire Island with its bars, clubs, and live music venues.</p>
-      </article>
-      <article>
-        <h3>Outdoor Activities</h3>
-        <p>Enjoy a variety of outdoor activities such as hiking, biking, and bird watching in the natural beauty of Fire Island.</p>
-      </article>
-    </section>
-
-    <section id="gallery" class="gallery">
-      <h2>Image Gallery</h2>
-      <div class="gallery-grid">
-        <figure class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Beach Sunset" />
-          <figcaption>Beach Sunset</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Boardwalk" />
-          <figcaption>Boardwalk</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Lighthouse" />
-          <figcaption>Lighthouse</figcaption>
-        </figure>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="stlye.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#subscribe">Subscribe</a>
+      </nav>
+      <div class="hero-content">
+        <h1>Welcome to My Blog</h1>
+        <p>This is a summary of my blog post about HTML structure and best practices.</p>
+        <a class="button" href="#subscribe">Read More</a>
       </div>
-    </section>
+      <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=900&q=80" alt="Hero image of a desk workspace" class="hero-image" />
+    </header>
 
-    <section id="contact" class="about">
-      <h2>Contact Us</h2>
-      <form action="submit_form.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required /><br /><br />
+    <main>
+      <section id="about" class="section about">
+        <h2>Blog Post Summary</h2>
+        <p>
+          My trip to the national park was full of unforgettable moments, from breathtaking mountain views
+          to peaceful hikes through the forest. I loved waking up early to see the sunrise, exploring scenic trails,
+          and taking in the beauty of the wild landscape. The experience was both relaxing and exciting, and it reminded
+          me how important it is to appreciate nature and spend time outdoors.
+        </p>
+      </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required /><br /><br />
+      <section id="gallery" class="section gallery">
+        <h2>Image Gallery</h2>
+        <ul class="gallery-list">
+          <li><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Mountain trail in the national park" /></li>
+          <li><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Forest and lake scene" /></li>
+          <li><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Scenic valley view" /></li>
+        </ul>
+      </section>
 
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br /><br />
-
-        <input type="submit" value="Submit" />
-      </form>
-    </section>
-  </main>
-</body>
+      <section id="subscribe" class="section cta">
+        <h2>Plan Your Adventure</h2>
+        <p>Ready to explore the beauty of the park for yourself?</p>
+        <a class="call-link" href="https://www.nps.gov/index.htm" target="_blank" rel="noopener noreferrer">
+          Plan your National Park adventure today!
+        </a>
+      </section><section id="cta">
+  <h2>Call to Action Header</h2>
+  <!-- CTA content or form/button here -->
+</section>
+    </main>
+  </body>
 </html>
